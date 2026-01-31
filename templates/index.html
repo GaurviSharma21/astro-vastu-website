@@ -1,0 +1,1151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The House of AstroVastu | Vastu & Astrology Expert</title>
+    <meta name="description" content="Transform your space and life with Richa Agarwal and Mamta Gupta, a renowned Vastu Shastri and Astrologer. Scientific solutions for home, office, and personal growth.">
+    <meta name="author" content="The House of AstroVastu">
+    <meta name="keywords" content="Vastu Shastra, Astrology, Vastu Consultant, Astrologer, Richa Agarwal & Mamta Gupta , House of AstroVastu, Vedic Science">
+
+    <meta property="og:title" content="The House of AstroVastu | Richa Agarwal and Mamta Gupta">
+    <meta property="og:description" content="Where Ancient Wisdom Meets Modern Science. Vastu & Astrology solutions by Richa Agarwal and Mamta Gupta.">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+</head>
+
+<!-- Luxury Loading Overlay -->
+<div id="luxLoader">
+    <div class="lux-box">
+      <div class="lux-spinner"></div>
+      <p id="luxText">Sending your request...</p>
+    </div>
+  </div>
+  
+  <!-- Toast Notification -->
+  <div id="luxToast"></div>
+  
+<body>
+
+    <header class="header-wrapper">
+<!-- Top Contact Banner -->
+<!-- <div class="top-banner">
+    <div class="container top-banner-content"> -->
+
+        <!-- Company Logo Left -->
+        <!-- <div class="top-logo">
+            <img src="company-logo.png" alt="Company Logo">
+        </div> -->
+
+        <!-- Contact Info Right -->
+        <!-- <div class="top-right">
+
+            <a href="tel:+919876543210" class="top-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2
+                    19.79 19.79 0 0 1-8.63-3.07
+                    19.5 19.5 0 0 1-6-6
+                    19.79 19.79 0 0 1-3.07-8.67
+                    A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72
+                    12.84 12.84 0 0 0 .7 2.81
+                    2 2 0 0 1-.45 2.11L8.09 9.91
+                    a16 16 0 0 0 6 6l1.27-1.27
+                    a2 2 0 0 1 2.11-.45
+                    12.84 12.84 0 0 0 2.81.7
+                    A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span>+91 98765 43210</span>
+            </a>
+
+            <a href="mailto:contact@houseofastrovastu.com" class="top-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                </svg>
+                <span>contact@houseofastrovastu.com</span>
+            </a> -->
+
+            <!-- Social Icons -->
+            <!-- <div class="top-social">
+                <a href="https://facebook.com" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+                    </svg>
+                </a>
+
+                <a href="https://instagram.com" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <rect x="2" y="2" width="20" height="20" rx="5"/>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                    </svg>
+                </a>
+
+                <a href="https://youtube.com" target="_blank">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25"/>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48"/>
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div> -->
+
+
+<!-- Navigation -->
+ <nav class="navbar" id="navbar">
+    <div class="container navbar-content">
+        <a href="#home" class="logo">
+            <div class="logo-icon">
+                <img src="{{ url_for('static', filename='images/logo.png') }}"alt="Richa Agarwal">
+            </div>
+            <div class="logo-text">
+                <span class="logo-main">The House of</span>
+                <span class="logo-sub">AstroVastu</span>
+            </div>
+        </a>
+
+        <div class="nav-links" id="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#why-us">Why Us</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#contact">Contact</a>
+            <a href="#faq">FAQ</a>
+        </div>
+        
+
+        <div class="nav-cta">
+            <a href="#consultation" class="btn btn-gold">Book Consultation</a>
+        </div>
+
+        <button class="mobile-menu-btn" id="mobile-menu-btn">
+            <svg class="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+            <svg class="close-icon hidden" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        </button>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="mobile-menu">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#why-us">Why Us</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn-gold">Book Consultation</a>
+
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+    <div class="hero-bg"><img src="{{ url_for('static', filename='images/mandala.png') }}"alt="background"> </div>
+    <div class="hero-overlay"></div>
+    <div class="star-pattern"></div>
+
+    <div class="container hero-content">
+        <div class="hero-badge animate-fade-up">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5L12 2z"/>
+            </svg>
+            <span>Ancient Wisdom • Modern Science</span>
+        </div>
+
+        <h1 class="hero-title animate-fade-up">
+            Transform Your Space,<br>
+            <span class="text-gradient-gold">Transform Your Life</span>
+        </h1>
+
+        <p class="hero-subtitle animate-fade-in-delay">
+            Experience the harmony of Vastu Shastra and Vedic Astrology with
+            <span class="text-gold">Richa Agarwal & Mamta Gupta</span> — where timeless 
+            knowledge meets scientific solutions for your home, office, and life.
+        </p>
+
+        <div class="hero-cta animate-fade-in-delay">
+            <a href="#consultation" class="btn btn-gold btn-lg">
+                Start Your Journey
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+            </a>
+            <a href="#services" class="btn btn-outline btn-lg">Explore Services</a>
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat">
+                <div class="stat-number">18+</div>
+                <div class="stat-label">Years Experience</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">5000+</div>
+                <div class="stat-label">Happy Clients</div>
+            </div>
+            <div class="stat">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Scientific Approach</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="scroll-indicator">
+        <div class="scroll-mouse">
+            <div class="scroll-dot"></div>
+        </div>
+    </div>
+</section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="about-slider">
+
+                <!-- Slide 1 -->
+                <div class="about-slide active">
+                    <div class="about-grid">
+                        <div class="about-image">
+                            <div class="image-wrapper">
+                                <img src="{{ url_for('static', filename='images/richa_agarwal.jpg') }}"alt="Richa Agarwal">
+                                <div class="image-frame"></div>
+                                <div class="image-bg"></div>
+                            </div>
+                        </div>
+
+                        <div class="about-content">
+                            <div class="section-badge"><span>About</span></div>
+
+                            <h2 class="section-title">
+                                Meet <span class="text-gradient-gold">Richa Agarwal</span>
+                            </h2>
+
+                            <p class="about-text">
+                                Richa Agarwal blends ancient Vastu wisdom and Astrology with modern understanding to deliver impactful solutions for residential, commercial, and industrial spaces.
+                            </p>
+
+                            <p class="about-text">
+                                Her consultations aim to enhance prosperity, balance, and positive energy in every environment.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="about-slide">
+                    <div class="about-grid">
+                        <div class="about-image">
+                            <div class="image-wrapper">
+                                <img src="{{ url_for('static', filename='images/mamta_gupta.jpg') }}"alt="Mamta Gupta">
+                                <div class="image-frame"></div>
+                                <div class="image-bg"></div>
+                            </div>
+                        </div>
+
+                        <div class="about-content">
+                            <div class="section-badge"><span>About</span></div>
+            
+                            <h2 class="section-title">
+                                Meet <span class="text-gradient-gold">Mamta Gupta</span>
+                            </h2>
+            
+                            <p class="about-text">
+                                With 18+ years of expertise, Mamta Gupta combines Vedic Vastu and Astrology with scientific logic to provide powerful solutions for homes, businesses, industries, and commercial properties.
+                                
+                            </p>
+            
+                            <p class="about-text">
+                                Her guidance is designed to bring balance, success, and positive energy into every space.
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Dots -->
+                <div class="about-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                </div>
+            
+            </div>
+            
+        </div>
+
+        <div class="about-features-grid">
+            <div class="about-feature-card">
+                <div class="feature-icon">
+                <!-- Deep Knowledge Icon -->
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/>
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/>
+                </svg>
+            </div>
+            <h3>Deep Knowledge</h3>
+            <p>Mastery in Vastu Shastra & Vedic Astrology</p>
+            </div>
+    
+            <div class="about-feature-card">
+              <div class="feature-icon">
+                <!-- Scientific Approach Icon -->
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2v20"/>
+                  <path d="M2 12h20"/>
+                  <circle cx="12" cy="12" r="4"/>
+                </svg>
+              </div>
+              <h3>Scientific Approach</h3>
+              <p>Solutions backed by modern science</p>
+            </div>
+          
+            <div class="about-feature-card">
+              <div class="feature-icon">
+                <!-- Renowned Expert Icon -->
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="12" cy="8" r="4"/>
+                  <path d="M8 21v-2a4 4 0 0 1 8 0v2"/>
+                </svg>
+              </div>
+              <h3>Renowned Expert</h3>
+              <p>Trusted by thousands across India</p>
+            </div>
+
+            <div class="about-feature-card">
+                <div class="feature-icon">
+                <!-- Practical Solutions Icon -->
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                    <circle cx="9" cy="7" r="4"/>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+                </div>
+                <h3>Practical Solutions</h3>
+                <p>No superstition, only practical remedies</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services section bg-secondary">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <span>Our Services</span>
+                </div>
+                <h2 class="section-title">
+                    Comprehensive Solutions for <span class="text-gradient-gold">Mind, Space & Destiny</span>
+                </h2>
+                <p class="section-subtitle">
+                    From home remedies to life-changing guidance, discover how ancient wisdom 
+                    combined with modern science can transform every aspect of your life.
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Residential Vastu</h3>
+                    <p>Transform your home into a sanctuary of positive energy. Get detailed analysis and practical remedies for peace, health, and prosperity.</p>
+                    <ul class="service-features">
+                        <li><span class="dot"></span>Floor plan analysis</li>
+                        <li><span class="dot"></span>Direction optimization</li>
+                        <li><span class="dot"></span>Energy balancing</li>
+                    </ul>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"></path>
+                            <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                            <path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"></path>
+                            <path d="M10 6h4"></path>
+                            <path d="M10 10h4"></path>
+                            <path d="M10 14h4"></path>
+                            <path d="M10 18h4"></path>
+                        </svg>
+                    </div>
+                    <h3>Commercial Vastu</h3>
+                    <p>Optimize your business space for success. Scientific Vastu solutions for offices, factories, shops, and commercial establishments.</p>
+                    <ul class="service-features">
+                        <li><span class="dot"></span>Business growth focus</li>
+                        <li><span class="dot"></span>Employee productivity</li>
+                        <li><span class="dot"></span>Financial prosperity</li>
+                    </ul>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                            <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/>
+                        </svg>
+                    </div>
+                    <h3>Vedic Astrology</h3>
+                    <p>Discover your cosmic blueprint. Comprehensive birth chart analysis with practical guidance for career, relationships, and life decisions.</p>
+                    <ul class="service-features">
+                        <li><span class="dot"></span>Birth chart reading</li>
+                        <li><span class="dot"></span>Career guidance</li>
+                        <li><span class="dot"></span>Relationship compatibility</li>
+                    </ul>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                        </svg>
+                    </div>
+                    <h3>Plot Selection</h3>
+                    <p>Choose the right land for your future. Expert guidance on selecting plots and properties based on Vastu principles.</p>
+                    <ul class="service-features">
+                        <li><span class="dot"></span>Land evaluation</li>
+                        <li><span class="dot"></span>Direction analysis</li>
+                        <li><span class="dot"></span>Investment guidance</li>
+                    </ul>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path>
+                        </svg>
+                    </div>
+                    <h3>Relationship Remedies</h3>
+                    <p>Restore harmony in relationships through the combined power of Astrology and Vastu corrections.</p>
+                    <ul class="service-features">
+                        <li><span class="dot"></span>Marriage compatibility</li>
+                        <li><span class="dot"></span>Family harmony</li>
+                        <li><span class="dot"></span>Personal growth</li>
+                    </ul>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline>
+                            <polyline points="17 6 23 6 23 12"></polyline>
+                        </svg>
+                    </div>
+                    <h3>Career & Finance</h3>
+                    <p>Unlock your potential for success. Astrological insights and Vastu adjustments for career growth and financial stability.</p>
+                    <ul class="service-features">
+                        <li><span class="dot"></span>Career path analysis</li>
+                        <li><span class="dot"></span>Wealth optimization</li>
+                        <li><span class="dot"></span>Success timing</li>
+                    </ul>
+                    <a href="#" class="service-link">Learn More →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Us Section -->
+    <section id="why-us" class="why-us section">
+        <div class="container">
+            <div class="why-us-grid">
+                <div class="why-us-content">
+                    <div class="section-badge">
+                        <span>Why Choose Us</span>
+                    </div>
+                    
+                    <h2 class="section-title">
+                        Where <span class="text-gradient-gold">Ancient Wisdom</span> Meets <span class="text-gradient-gold">Modern Science</span>
+                    </h2>
+                    
+                    <p class="why-us-text">
+                        At The House of AstroVastu, we don't just offer traditional remedies—we 
+                        bridge the gap between Vedic knowledge and contemporary understanding. 
+                        Our approach ensures you get solutions that are both spiritually meaningful 
+                        and practically implementable.
+                    </p>
+                    
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>No demolition or structural changes required</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Remedies that fit modern lifestyles</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Personalized solutions for your unique situation</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Follow-up support included</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Online & in-person consultations available</span>
+                        </div>
+                        <div class="feature-item">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                            </svg>
+                            <span>Confidential and professional service</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="reasons-grid">
+                    <div class="reason-card">
+                        <div class="reason-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18"></path>
+                                <path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"></path>
+                                <circle cx="12" cy="10" r="2"></circle>
+                            </svg>
+                        </div>
+                        <h3>Science-Backed Solutions</h3>
+                        <p>Every recommendation is grounded in physics, energy flow principles, and proven methodologies. No blind faith, only logical solutions.</p>
+                    </div>
+                    <div class="reason-card offset">
+                        <div class="reason-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg>
+                        </div>
+                        <h3>Practical & Actionable</h3>
+                        <p>Forget breaking walls or major renovations. Get simple, cost-effective remedies that work without disrupting your life.</p>
+                    </div>
+                    <div class="reason-card">
+                        <div class="reason-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
+                        </div>
+                        <h3>Trusted Expertise</h3>
+                        <p>With 15+ years of experience and 5000+ satisfied clients, Richa Agarwal and Mamta Gupta is one of India's most trusted Vastu and Astrology consultants.</p>
+                    </div>
+                    <div class="reason-card offset">
+                        <div class="reason-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <polyline points="12 6 12 12 16 14"></polyline>
+                            </svg>
+                        </div>
+                        <h3>Timely Guidance</h3>
+                        <p>Receive consultations tailored to auspicious timings and planetary alignments for maximum positive impact.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials section bg-primary">
+        <div class="star-pattern-overlay"></div>
+        <div class="container">
+            <div class="section-header light">
+                <div class="section-badge light">
+                    <span>Testimonials</span>
+                </div>
+                <h2 class="section-title light">
+                    Trusted by <span class="text-gradient-gold">Thousands</span>
+                </h2>
+                <p class="section-subtitle light">
+                    Real stories from real people whose lives have been transformed through 
+                    the power of Vastu and Astrology.
+                </p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21c0 1 0 1 1 1z"></path>
+                        <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+                    </svg>
+                    <p class="testimonial-text">"After implementing Richa ma'am's & Mamta ma'am's  Vastu suggestions, our business saw a remarkable 40% growth in just 6 months. Her scientific approach made it easy to trust and follow the remedies."</p>
+                    <div class="testimonial-stars">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">P</div>
+                        <div class="author-info">
+                            <strong>Priya Sharma</strong>
+                            <span>Business Owner • Mumbai</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21c0 1 0 1 1 1z"></path>
+                        <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+                    </svg>
+                    <p class="testimonial-text">"I was skeptical at first, but the practical solutions changed my mind. No demolition, no expensive changes—just simple adjustments that brought peace to our home."</p>
+                    <div class="testimonial-stars">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">R</div>
+                        <div class="author-info">
+                            <strong>Rajesh Gupta</strong>
+                            <span>IT Professional • Delhi</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21c0 1 0 1 1 1z"></path>
+                        <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+                    </svg>
+                    <p class="testimonial-text">"The astrology consultation was eye-opening. Richa ji & Mamta ji explained everything scientifically and gave me practical guidance for my children's education and career choices."</p>
+                    <div class="testimonial-stars">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">A</div>
+                        <div class="author-info">
+                            <strong>Anjali Mehta</strong>
+                            <span>Homemaker • Bangalore</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <svg class="quote-icon" width="40" height="40" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V21c0 1 0 1 1 1z"></path>
+                        <path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path>
+                    </svg>
+                    <p class="testimonial-text">"As a developer, I now consult Richa ma'am & Mamta ma'am for all our projects. Her Vastu guidance has become invaluable for creating homes that sell faster and make residents happier."</p>
+                    <div class="testimonial-stars">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"/></svg>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">V</div>
+                        <div class="author-info">
+                            <strong>Vikram Singh</strong>
+                            <span>Real Estate Developer • Jaipur</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Section -->
+<section id="consultation" class="contact section bg-secondary">
+    <div class="container">
+        
+        <div class="section-header">
+            <div class="section-badge">
+                <span>Get in Touch</span>
+            </div>
+            <h2 class="section-title">
+                Begin Your <span class="text-gradient-gold">Transformation</span>
+            </h2>
+            <p class="section-subtitle">
+                Ready to bring positive changes to your life? Reach out for a consultation 
+                and take the first step towards harmony and success.
+            </p>
+        </div>
+
+        <div class="consultation-section">
+            <h3 class="consultation-title">Consultation</h3>
+
+            <div class="consultation-forms">
+
+                <!-- Online Consultation Form -->
+                <div class="contact-form-wrapper">
+                    <h3>Online Consultation</h3>
+                    <form class="contact-form" id="onlineForm">
+                        <input type="hidden" name="form_type" value="online">
+
+
+                        <div class="form-group">
+                          <label>Full Name</label>
+                          <input type="text" name="name" placeholder="Your name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                          <label>Email</label>
+                          <input type="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                        
+                        <div class="form-group phone-group">
+                            <label>Phone</label>
+                            <div class="phone-input ios-phone">
+                                <input type="text" class="countryCode" name="country_code" readonly>
+                                <input type="tel" name="phone" placeholder="Phone number" required>
+                            </div>
+                          </div>
+                        
+                        <div class="form-group">
+                          <label>Service Required</label>
+                          <select name="service" required>
+                            <option value="">Select a service</option>
+                            <option>Residential Vastu</option>
+                            <option>Commercial Vastu</option>
+                            <option>Vedic Astrology</option>
+                            <option>Plot Selection</option>
+                            <option>Relationship Remedies</option>
+                            <option>Career & Finance</option>
+                          </select>
+                        </div>
+                        
+                        <div class="form-group">
+                          <label>Message</label>
+                          <textarea name="message" rows="4"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-gold btn-full">Book Online</button>
+                        </form>
+                        
+                </div>
+
+
+                <!-- Offline Consultation Form -->
+                <div class="contact-form-wrapper">
+                    <h3>Offline Consultation</h3>
+                    <form class="contact-form" id="offlineForm">
+                        <input type="hidden" name="form_type" value="offline">
+
+
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" name="name" placeholder="Your name" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="your@email.com" required>
+                        </div>
+                    
+                        <div class="form-group phone-group">
+                            <label>Phone</label>
+                            <div class="phone-input ios-phone">
+                                <input type="text" class="countryCode" name="country_code" readonly>
+                                <input type="tel" name="phone" placeholder="Phone number" required>
+                            </div>
+                          </div>
+
+                        <div class="form-group">
+                            <label>Service Required</label>
+                            <select name="service" required>
+                                <option value="">Select a service</option>
+                                <option>Residential Vastu</option>
+                                <option>Commercial Vastu</option>
+                                <option>Vedic Astrology</option>
+                                <option>Plot Selection</option>
+                                <option>Relationship Remedies</option>
+                                <option>Career & Finance</option>
+                            </select>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label>Address</label>
+                            <input type="text" name="address" placeholder="Full address" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label>City</label>
+                            <input type="text" name="city" placeholder="City" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label>State</label>
+                            <input type="text" name="state" placeholder="State" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label>Country</label>
+                            <input type="text" name="country" placeholder="Country" required>
+                        </div>
+                    
+                        <div class="form-group">
+                            <label>Pincode</label>
+                            <input type="number" name="pincode" placeholder="Pincode">
+                        </div>
+                    
+                        <button type="submit" class="btn btn-gold btn-full">Book Offline</button>
+                    </form>
+                    
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- =====================form submission======================= -->
+
+<!-- <script>
+    async function sendForm(form) {
+    const formData = new FormData(form);
+    const data = Object.fromEntries(formData.entries());
+
+    // Show Luxury Loader
+    document.getElementById("luxLoader").style.display = "flex";
+    document.getElementById("luxText").innerText = "Sending your request...";
+
+    try {
+        const res = await fetch("/submit", {
+            method: "POST",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(data)
+        });
+
+        const result = await res.json();
+
+        // Hide loader
+        document.getElementById("luxLoader").style.display = "none";
+
+        if (result.status === "success") {
+            showToast("✨ Submitted successfully! We will contact you soon.");
+        } else {
+            showToast("❌ Something went wrong. Try again.");
+        }
+
+    } catch (err) {
+        console.error(err);
+        document.getElementById("luxLoader").style.display = "none";
+        showToast("⚠️ Server error. Please try later.");
+    }
+}
+
+
+// Online Form
+document.getElementById("onlineForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    sendForm(this);
+});
+
+// Offline Form
+document.getElementById("offlineForm").addEventListener("submit", function(e){
+    e.preventDefault();
+    sendForm(this);
+});
+
+
+// Toast Function
+function showToast(msg) {
+    const toast = document.getElementById("luxToast");
+    toast.innerText = msg;
+    toast.classList.add("show");
+
+    setTimeout(() => toast.classList.remove("show"), 4000);
+}
+
+    </script> -->
+    
+    
+  <!--==========end======================  -->
+
+
+
+<!-- Contact Info Section -->
+<section id="contact" class="contact-info section bg-secondary">
+    <div class="container">
+
+        <div class="contact-info-wrapper">
+            <div class="contact-info-card">
+                <!-- Center Heading -->
+                <h3 class="contact-title">Contact Information</h3>
+
+                <!-- Two Column Layout -->
+                <div class="contact-info-grid">
+
+                    <!-- Left Column -->
+                    <div class="contact-column">
+                        <div class="contact-items">
+                            <a href="tel:+91- 7734003377" class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Phone</strong>
+                                    <span>+91-7734003377</span>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="contact-item">
+                                <a href="mailto:info@houseofastrovastu.com" class="contact-item">
+                                <div class="contact-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                        <polyline points="22,6 12,13 2,6"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <strong>Email</strong>
+                                    <span>info@houseofastrovastu.com</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Column -->
+                    <div class="contact-column">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Location</strong>
+                                <span>New Delhi, India</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <polyline points="12 6 12 12 16 14"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <strong>Consultation Hours</strong>
+                                <span>10:00 AM - 7:00 PM (IST)</span>
+                            </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section id="faq" class="faq-section">
+    <div class="container">
+        <div class="section-header light">
+            <div class="section-badge light">
+                <span>FAQs</span>
+            </div>
+            <h2 class="section-title light">Frequently Asked Questions</h2>
+            <p class="section-subtitle light">
+                Answers to common questions about Vastu & Astrology consultations.
+            </p>
+        </div>
+
+        <div class="faq-grid">
+
+            <details class="faq-item">
+                <summary>Do you oﬀer consulta ons for UAE clients?</summary>
+                <p>Yes. We oﬀer online consulta ons for clients across UAE and worldwide, and in-person consulta ons during select international events.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>How are online consultations conducted?</summary>
+                <p>Consulta ons are conducted via Zoom / video call / WhatsApp, at a mutually agreed time considering me zones.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>What information is required before a consultation?</summary>
+                <p>Depending on the service:<br>
+                    • Astrology: Birth date, me, and place<br>
+                    • Vastu: Floor plan, photos/videos (if applicable), and concerns<br>
+                    A prepara on checklist is shared a er booking.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Do you guarantee results?</summary>
+                <p>No. Astrology and Vastu are guidance-based sciences. While many clients experience positive outcomes, results cannot be guaranteed and vary individually.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Are your services confidential?</summary>
+                <p>Absolutely. All client informa on and discussions are kept strictly confidential. Testimonials are shared only with consent.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Can Vastu be applied to rented homes or apartments in Dubai?</summary>
+                <p>Yes. We provide practical, non-structural Vastu solu ons suitable for rented apartments and modern layouts.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>What are consultation fees?</summary>
+                <p>Fees vary based on consultation depth, scope, and follow-up. All pricing is clearly shared before booking.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Do you provide written reports?</summary>
+                <p>Yes, written summaries or PDF reports are provided for selected packages.</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>What payment methods are accepted?</summary>
+                <p>Interna onal payments can be made via online transfer, UPI, or other secure payment methods (details shared during booking).</p>
+            </details>
+
+            <details class="faq-item">
+                <summary>Is this a substitue for medical or legal advice?</summary>
+                <p>No. our guidance should not replave medical, legal, financial, or psychological advice from qualified professionals.</p>
+            </details>
+
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <div class="logo-icon">
+                            <img src="{{ url_for('static', filename='images/logo.png') }}"alt="Richa Agarwal">
+                        </div>
+                        <div class="logo-text">
+                            <span class="logo-main">The House of</span>
+                            <span class="logo-sub">AstroVastu</span>
+                        </div>
+                    </a>
+                    <p>Bridging ancient Vedic wisdom with modern science for harmony, prosperity, and success in your life.</p>
+                    <div class="social-links">
+                        <!-- <a href="#" aria-label="Facebook">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a> -->
+                        <a href="https://www.instagram.com/houseofastrovastu" aria-label="Instagram">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/@HouseOfAstroVastu" aria-label="YouTube">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                                <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                            </svg>
+                        </a>
+                        <!-- <a href="#" aria-label="Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+                            </svg>
+                        </a> -->
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li> <a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Our Services</h4>
+                    <ul>
+                        <li><a href="#services">Residential Vastu</a></li>
+                        <li><a href="#services">Commercial Vastu</a></li>
+                        <li><a href="#services">Vedic Astrology</a></li>
+                        <li><a href="#services">Plot Selection</a></li>
+                        <li><a href="#services">Career Guidance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Follow for Vastu tips, astrology insights, and exclusive content.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-content">
+                <p>© The House of AstroVastu. All rights reserved.</p>
+                <div class="footer-legal">
+                    <!-- <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a> -->
+                    <a href="{{ url_for('static', filename='pdf/client_aggrement_disclaimer.pdf') }}" target="_blank">Client Agreement & Disclaimer</a>
+                </div>
+            </div>
+            </div>
+            <div class="footer-disclaimer">
+                <div class="container">
+                    <p>
+                        <strong>Disclaimer:</strong> All Vastu and Astrology guidance provided on this website is based on traditional knowledge systems and is intended for informational purposes only. Results may vary from person to person. This website does not guarantee specific outcomes and should not be considered a substitute for professional, legal, medical, or financial advice.
+                    </p>
+                </div>
+            </div>
+            
+
+        
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
